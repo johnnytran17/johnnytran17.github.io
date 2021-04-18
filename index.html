@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Johnny Tran's 2021 Digital Design Portfolio </title>
+    <meta name="description" content="See my collection of portfolio items in graphic, web, interface and motion design. If you're an employer in Sydney, Australia looking to reach out, please answer the questionnaire to see if we'll be a good fit.">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="Johnny Tran">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/CustomSyle.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <script type="text/javascript" src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script type="text/javascript" rel="preload" src="https://kit.fontawesome.com/64b04b02aa.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#start"> <img src="img/JTLogoColour.svg" width="30" height="30" alt="Johnny Tran Logo"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a id="nav-get" class="nav-link" href="#get">Get to know me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work">What can I offer?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="CTA1" href="#hire">Hire me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="start" class="intro-section">
+        <div class="ball"></div>
+        <div id="logo-container">
+            <lottie-player id="lottieLogo" src="js/logo.json" background="transparent" speed="1" autoplay></lottie-player>
+        </div>
+        <div id="intro-heading">
+            <h1><span class="staggered-intro here">Johnny</span> <span class="staggered-intro johnny">Tran</span></h1>
+            <h2 class="doStuff"><span class="staggered-intro" style="color: #FF5252">Designer.</span><span class="staggered-intro" style="color: rgb(4, 105, 192)">&nbsp;Coder.</span><span class="staggered-intro" style="color: rgb(70, 149, 234)">&nbsp;Motion Artist.</span></h2>
+            <div class="badge-container">
+                <span class="badge badge-designer ">Visual Design (UI)</span>
+                <span class="badge badge-designer">Emails</span>
+                <span class="badge badge-designer">Branding</span>
+                <span class="badge badge-coder">HTML</span>
+                <span class="badge badge-coder">CSS/SCSS</span>
+                <span class="badge badge-coder">Javascript</span>
+                <span class="badge badge-motion">Explainers</span>
+                <span class="badge badge-motion">Video</span>
+                <span class="badge badge-motion">Animated Logos</span>
+            </div>
+        </div>
+        <!-- Do a swipe version for mobile -->
+
+        <div id="scroll-prompt-1" class="animate__animated animate__fadeInUp animate__delay-3s">
+            <img id="animate-jump" class="scroll-mouse" src="img/icons/computer-mouse.svg" width="60" height="60" alt="Johnny Tran Meme">
+            <h6 class="mt-2 text-center">Scroll</h6>
+        </div>
+        <svg class="wave-top" width="100" viewBox="0 0 1200 250" preserveAspectRatio="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.578 500 264.749 600 246.698C700 228.647 800 132.374 900 108.306C1000 84.2382 1100 132.374 1150 156.442L1200 180.51V-8.5451e-06H1150C1100 -8.5451e-06 1000 -8.5451e-06 900 -8.5451e-06C800 -8.5451e-06 700 -8.5451e-06 600 -8.5451e-06C500 -8.5451e-06 400 -8.5451e-06 300 -8.5451e-06C200 -8.5451e-06 100 -8.5451e-06 50 -8.5451e-06H0V108.306Z" fill="#ffffff" />
+        </svg>
+    </section>
+    <a id="to-top" href="#start" class="animate__animated"><i class="fas fa-arrow-up"></i></a>
+    <section id="get">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 getting-to-know-info">
+                    <h3>A little about myself</h3>
+                    <p>I'm an experienced digital creative (specialising in <button id="tooltipshow" class="btn-link" data-toggle="tooltip" data-html="true" data-placement="top" title="<ul><li>Responsive Web Design</li><li>Motion Graphics</li><li>Coding (HTML/CSS/Vanilla JS)</li><li>Videography</li></ul>">multi-media</button>). I've been doing it for <span id="yearsOfExperience"></span> years and it's what I do best. I understand not just the limitations, but the possibilities. I bridge the gap between design and development; a gap that is often overlooked, yet so critical to the execution of a project.</p>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <lottie-player id="lottieSkills" src="js/skillSetAnimation.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                </div>
+            </div>
+            <div class="row likes-dislikes-container">
+                <div class="col-md-6">
+                    <h5 class="mb-3 text-muted"><i class="far fa-check-circle" aria-hidden="true"></i> <span>Likes</span></h5>
+                    <div class="row">
+                        <div class="col-3 p-0"><img class="likesDislikesImg" src="img/icons/memes.svg" width="60" height="60" alt="Johnny Tran Meme">
+                            <p class="likesDislikes"><button id="tooltipshow" class="btn-link" data-toggle="tooltip" data-html="true" data-placement="top" title="I like to start my day off with a meme or two... or ten.">Memes</button></p>
+                        </div>
+                        <div class="col-3 p-0"><img class="likesDislikesImg" src="img/icons/animals.svg" width="60" height="60" alt="johnny tran dog">
+                            <p class="likesDislikes"><button id="tooltipshow" class="btn-link" data-toggle="tooltip" data-html="true" data-placement="top" title="Cats, dogs, birds, goats 	&#8212; I love `em all. I currently have a Greyhound named Greymond, and he's the absolute best*.<br/><br/>*The absolute best at doing nothing.">Animals</button></p>
+                        </div>
+                        <div class="col-3 p-0"><img class="likesDislikesImg" src="img/icons/horrors.svg" width="60" height="60" alt="horror movies johnny tran">
+                            <p class="likesDislikes" style=""><button id="tooltipshow" class="btn-link" data-toggle="tooltip" data-html="true" data-placement="top" title="My personal faves:<ul><li>The Conjuring</li><li>Marianne</li><li>IT: Chapter One</li><li>The Haunting of Hill House</li><li>Annabelle: Creation</li></ul>">Horrors</button></p>
+                        </div>
+                        <div class="col-3 p-0"><img class="likesDislikesImg" src="img/icons/fruits.svg" width="60" height="60" alt="johnny tran sauce icon">
+                            <p class="likesDislikes"><button id="tooltipshow" class="btn-link" data-toggle="tooltip" data-html="true" data-placement="top" title="I'm a fruit feind. If I go to a buffet, it's straight to the fruit section, followed by entrees, then mains, and then back to the fruit section for dessert.">Fruit</button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="mb-3 text-muted"><i class="far fa-times-circle" aria-hidden="true"></i> <span>Dislikes</span></h5>
+                    <div class="row">
+                        <div class="col-3 p-0"><img class="likesDislikesImg" src="img/icons/swords.svg" width="60" height="60" alt="Office Politics icon">
+                            <p class="likesDislikes"><button id="tooltipshow" class="btn-link dislike" data-toggle="tooltip" data-html="true" data-placement="top" title="Drama and scheming is best reserved for poorly-scripted daytime television; not the workplace.">Politics</button></p>
+                        </div>
+                        <div class="col-3 p-0"><img class="likesDislikesImg" src="img/icons/hat.svg" width="60" height="60" alt="Fedora hat icon">
+                            <p class="likesDislikes"><button id="tooltipshow" class="btn-link dislike" data-toggle="tooltip" data-html="true" data-placement="top" title="It's the 21st century. There's no need to look like a mobster from the 1950s.">Fedoras</button></p>
+                        </div>
+                        <div class="col-3 p-0"><img class="likesDislikesImg" src="img/icons/olives.svg" width="60" height="60" alt="olives icon Johnny">
+                            <p class="likesDislikes"><button id="tooltipshow" class="btn-link dislike" data-toggle="tooltip" data-html="true" data-placement="top" title="I like fruit, but olives can burn in hell.">Olives</button></p>
+                        </div>
+                        <div class="col-3 p-0"><img class="likesDislikesImg" src="img/icons/train.svg" width="60" height="60" alt="Johnny Tran train icon">
+                            <p class="likesDislikes"><button id="tooltipshow" class="btn-link dislike" data-toggle="tooltip" data-html="true" data-placement="top" title="Especially when it's raining and somebody in your carriage smells like a used gym towel.">Trains</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wave-bottom-container">
+        <svg class="wave-bottom" width="100" viewBox="0 0 1200 250" preserveAspectRatio="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.578 500 264.749 600 246.698C700 228.647 800 132.374 900 108.306C1000 84.2382 1100 132.374 1150 156.442L1200 180.51V-8.5451e-06H1150C1100 -8.5451e-06 1000 -8.5451e-06 900 -8.5451e-06C800 -8.5451e-06 700 -8.5451e-06 600 -8.5451e-06C500 -8.5451e-06 400 -8.5451e-06 300 -8.5451e-06C200 -8.5451e-06 100 -8.5451e-06 50 -8.5451e-06H0V108.306Z" fill="#ebebeb" />
+        </svg>
+    </section>
+    <section id="work">
+        <div class="container">
+            <h3 class="dark"><strong>What I bring to the table</strong></h3>
+            <div class="row">
+
+                <div class="col-md-5">
+                    <div class="mt-3">
+                        <span class="badge-fixed">Branding</span>
+                        <span class="badge-fixed">Explainers</span>
+                        <span class="badge-fixed">Animated Logos</span></div>
+
+                    <h4 class="dark">Evoking emotion through motion</h4>
+
+                    <p class="text-light">In the past few years, I've been really getting into motion graphics. Some advantages motion can have over traditional/static imagery include:</p>
+                </div>
+                <div class="col-md-5 d-flex align-items-end">
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fas fa-plus text-success" aria-hidden="true"></i>&nbsp;&nbsp;Being visually striking using minimal page real estate</li>
+                        <li class="list-group-item"><i class="fas fa-plus text-success" aria-hidden="true"></i>&nbsp;&nbsp;Allowing for the opportunity to tell a story</li>
+                        <li class="list-group-item"><i class="fas fa-plus text-success" aria-hidden="true"></i>&nbsp;&nbsp;Helping to lift the appeal of non-tangible products</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <video id="video-the-now" width="100%" loop autoplay muted>
+                        <source src="img/TheNowMoGraph.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col-md-4">
+                    <video id="video-IDW-mograph" width="100%" loop autoplay muted>
+                        <source src="img/Portfolio2018_IDW_MoGraphV2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col-md-4">
+                    <video id="video-subject-compass" width="100%" loop autoplay muted>
+                        <source src="img/Subject_Compass_Preview.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <!--        Animated Divider START -->
+        <div class="ticker-wrap">
+            <div class="ticker">
+                <div class="ticker__item">
+                    <div class='dotted-gradient'></div>
+                </div>
+            </div>
+            <div class="ticker2">
+                <div class="ticker__item">
+                    <div class='dotted-gradient'></div>
+                </div>
+            </div>
+        </div>
+        <!--        Animated Divider END -->
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <div class="mt-5">
+                        <span class="badge-fixed">Emails</span>
+                        <span class="badge-fixed">Branding</span>
+                        <span class="badge-fixed">HTML</span>
+                        <span class="badge-fixed">CSS</span>
+                    </div>
+                    <h4 class="dark">A multi-disciplinary approach</h4>
+                    <p class="text-light">Here's an EDM I designed on a new visitor management system. This was originally briefed in as a huge chunk of copy (which would have been an absolute snoozefest to read).</p>
+                    <p class="text-light">The gist of the product was that it could <strong>register all workplace visitors in 20 seconds</strong>. In situations like this, adding animation can provide extra context which can really help simplify your product offering and help customers make faster decisions.</p>
+                    <a class="CTA1 d-inline-block" href="img/EasyLobbyLaunch.html" target="_blank">See the actual template</a>
+                </div>
+                <div class="col-md-6 px-5 pb-4">
+                    <video id="video-easy-lobby" width="100%" loop autoplay muted>
+                        <source src="img/EasyLobbyEDM.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+        <!--        Animated Divider START -->
+        <div class="ticker-wrap">
+            <div class="ticker">
+                <div class="ticker__item">
+                    <div class='dotted-gradient'></div>
+                </div>
+            </div>
+            <div class="ticker2">
+                <div class="ticker__item">
+                    <div class='dotted-gradient'></div>
+                </div>
+            </div>
+        </div>
+        <!--        Animated Divider END -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mt-5">
+                        <span class="badge-fixed">Visual Design (UI)</span>
+                        <span class="badge-fixed">HTML</span>
+                        <span class="badge-fixed">CSS/SCSS</span>
+                        <span class="badge-fixed">Javascript</span>
+                    </div>
+                    <h4 class="dark">A focus on implementation</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+
+                    <p class="text-light">Too often, designers don't get involved in development, and the final product just doesn't look quite right. I don't shy away from technically-challenging work and I'm well versed in CSS/SCSS.<br /><br /><span class="d-none d-lg-block">See the comparison below before/after I worked on the <a class="btn-link" href="https://www.uac.edu.au/course-search/undergraduate/find-a-course.html" target="_blank">UAC&nbsp;course&nbsp;search</a> (in both design and development).</span><span class="d-lg-none">See the <a class="btn-link" href="https://www.uac.edu.au/course-search/undergraduate/find-a-course.html" target="_blank">UAC&nbsp;course&nbsp;search</a>.</span></p>
+                    <h5 class="research-heading mt-5">Research</h5>
+                    <p class="text-light">I also participated as a note taker in one of the user focus groups where users were able to speak freely about their issues with the old application. Problems were noted (below) and workarounds were designed to help ease pain points.</p>
+                    <button id="issues-accordion" class="btn" type="button" data-toggle="collapse" data-target="#collapseissues" aria-expanded="false" aria-controls="collapseissues">
+                        <i class="fas fa-th-list bright-red" aria-hidden="true"></i> See issues
+                    </button>
+                    <div class="collapse" id="collapseissues">
+                        <div>
+                            <table class="table table-dark">
+                                <tbody>
+                                    <tr>
+                                        <td>Inaccurate search results page</td>
+                                    </tr>
+                                    <tr>
+                                        <td>inability to select more than one institution</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Too many clicks (4) to get from home to course description</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Too many text input fields</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Inability to click on course campus location</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="col-md-5 offset-md-1">
+                    <h5 class="results-heading">Results</h5>
+                    <p class="text-light"> We noticed the week after implementing the new design that there was a sharp uptick in not only page views but interactivity. 7 days after implementation, we found:</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fas fa-arrow-up text-success loop-up" aria-hidden="true"></i> <span class="text-success font-weight-bold">7.1%</span> more users</li>
+                        <li class="list-group-item"><i class="fas fa-arrow-up text-success loop-up" aria-hidden="true"></i> <span class="text-success font-weight-bold">7.1%</span> more sessions</li>
+                        <li class="list-group-item"><i class="fas fa-arrow-down text-success loop-down" aria-hidden="true"></i> <span class="text-success font-weight-bold">10%</span> lower bounce rate</li>
+                        <li class="list-group-item"><i class="fas fa-arrow-up text-success loop-up" aria-hidden="true"></i> <span class="text-success font-weight-bold">4%</span> longer session duration</li>
+                    </ul>
+                    <button id="improvements-accordion" class="btn" type="button" data-toggle="collapse" data-target="#collapseimprovements" aria-expanded="false" aria-controls="collapseimprovements">
+                        <i class="fas fa-th-list bright-red" aria-hidden="true"></i> See improvements
+                    </button>
+                    <div class="collapse" id="collapseimprovements">
+                        <div>
+
+                            <table class="table table-dark">
+                                <tbody>
+                                    <tr>
+                                        <td>'Sort-by' search query method added to increase search&nbsp;accuracy</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Adding dynamic filter-clearing buttons</td>
+                                    </tr>
+                                    <tr>
+                                        <td>One central search text input</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ability to filter via multiple checkbox parameters</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Campus locations added via Google Maps</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Institution logos added to easily distinguish between courses</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Visual hierarchy and overall layout/design updated</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 course-search-comparison d-none d-lg-block">
+<div class="row mt-3">
+    <div class="col-md-3"><div class="info-compare text-light">
+                        <h6 class="text-light"><i class="fas fa-adjust" aria-hidden="true"></i> <strong>Compare the two</strong></h6>
+                        Click and drag the slider to see the difference between the old and new course search.
+                    </div></div>
+    <div class="col-md-9"><div class=" wrapper-compare">
+                        <div class="before-compare">
+
+                            <img class="content-image" src="img/courseSearchBefore.jpg" draggable="false" /></div>
+                        <div class="after-compare">
+
+                            <img class="content-image" src="img/courseSearchAfter.jpg" draggable="false" />
+                        </div>
+                        <div class="scroller-compare">
+                            <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                                <polygon points="0 50 37 68 37 32 0 50" style="fill:#fff" />
+                                <polygon points="100 50 64 32 64 68 100 50" style="fill:#fff" /></svg>
+                            <span class="comparison-label new-label float-left">New</span>
+                            <span class="comparison-label old-label float-right">Old</span>
+                        </div>
+                    </div></div>
+                    
+                    
+</div>
+                </div>
+            </div>
+        </div>
+<!--
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h4 class="dark">Testing for success</h4>
+                    <p class="text-light">The trouble with design as a discipline is that it can be highly subjective. Because of this, I feel the best way to design is based off of data and analytics.</p>
+                    <p class="text-light">I like to use Google Analytics and Google tag manager to collate data and measure the success of my designs.</p>
+                    <p class="text-light">There is no perfect one-off web design. The best kind of website is one that is continually improved upon section by section.</p>
+                    <p class="text-light">Show course search module test results as well as streamlining getting to the page. One of the first things I wanted to implement on the home page was a course search module. Looking at the different metrics between home page views and course search views, I was convinced that we could improve on course search numbers.</p>
+                </div>
+            </div>
+        </div>
+-->
+        <!--        Animated Divider START -->
+        <div class="ticker-wrap">
+            <div class="ticker">
+                <div class="ticker__item">
+                    <div class='dotted-gradient'></div>
+                </div>
+            </div>
+            <div class="ticker2">
+                <div class="ticker__item">
+                    <div class='dotted-gradient'></div>
+                </div>
+            </div>
+        </div>
+        <!--        Animated Divider END -->
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-md-5">
+                    <h4 class="dark">Managing EDMs and their effectiveness</h4>
+                    <p class="text-light">Good email design will only help to improve your click rates; not your open rates. If your open rates are already suffering, good email design won't save you.</p>
+                    <p class="text-light">The most critical part of your email campaign is your recipient list. If you have a group of people who aren't really interested, it won't matter how stunning your email looks. Your campaign is going to be a dud.</p>
+                    <table class="table table-dark mt-5">
+                        <thead>
+                            <tr>
+                                <th>What affects your <span class="bright-red">open rate</span>?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Are your recipients even interested?</td>
+                            </tr>
+                            <tr>
+                                <td>Has your domain been flagged on any blacklists?</td>
+                            </tr>
+                            <tr>
+                                <td>Is your Sender name/subject line engaging enough?</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-dark mt-5">
+                        <thead>
+                            <tr>
+                                <th>What affects your <span class="bright-blue">click rate</span>?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Are your emails rendering correctly in popular clients?</td>
+                            </tr>
+                            <tr>
+                                <td>Is your content too bloated or spam-sensitive?</td>
+                            </tr>
+                            <tr>
+                                <td>Do you have a dedicated landed page?</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="col-md-5 offset-md-2 timeline-container">
+                    <div class="timeline before">
+                        <h6><span class="badge-critical"><i class="fas fa-th-list" aria-hidden="true"></i> Recipient list</span></h6>
+                    </div>
+                    <div class="timeline before">
+                        <h6><span class="badge-critical"><i class="fas fa-globe" aria-hidden="true"></i> Domain reputation</span></h6>
+                    </div>
+                    <div class="timeline before">
+                        <h6><span class="badge-critical"><i class="far fa-address-book" aria-hidden="true"></i> Sender name</span></h6>
+                    </div>
+                    <div class="timeline before">
+                        <h6><span class="badge-critical"><i class="fas fa-envelope" aria-hidden="true"></i> Subject line</span></h6>
+                    </div>
+                    <div class="timeline before">
+                        <h6><span class="badge-critical"><i class="fas fa-envelope-open-text" aria-hidden="true"></i> Pre-header text</span></h6>
+                    </div>
+                    <div class="timeline after">
+                        <h6><span class="badge-critical"><i class="fas fa-code" aria-hidden="true"></i> Email design/content</span></h6>
+                    </div>
+                    <div class="timeline after">
+                        <h6><span class="badge-critical"><i class="far fa-paper-plane" aria-hidden="true"></i> Dedicated landing page</span></h6>
+                    </div>
+                </div>
+
+            </div>
+            <button id="accordion-button1" class="btn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                See examples
+            </button>
+            <script type="text/javascript">
+                $("#accordion-button1").click(function() {
+                    if ($("#accordion-button1").attr("aria-expanded") == "false") {
+                        $("#accordion-button1").css("border-radius", "23px 23px 0 0")
+                    } else {
+                        $("#accordion-button1").css("border-radius", "23px")
+                    }
+                });
+
+            </script>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body example-bg-color">
+                    <div class="row">
+                        <div class="col-md-6 pt-4">
+                            <h5 class="case-study-heading">Case Study</h5>
+                            <p>Take <strong>Figure 1</strong> for example. Visually appealing, simple and coded to render on top email clients in mobile and desktop. How did it perform? Not so great. In fact, I think it only ended up with an open rate of 10% and click-rate of 1%; it wasn't even worth me taking note of.</p>
+                            <p>Why am I telling you this? Because I think it's important to manage expectations. The truth of the matter is that email designs alone won't be enough to turn your campaign around. This email serves as a reminder that campaigns rely on every part of the process being done right &mdash; the list being the most crucial first step.</p>
+                            <p><strong>Figure 2</strong> on the other hand knocked it out of the park whilst appearing incredibly basic (as per the requirement from the client). The results?
+                                62.87% open rate. 35.85% click rate. The major difference? A good quality list of recipients likely to be interested in the content.</p>
+                            <p>Another important thing to cover is a standardised design for all the possible types of comms (<strong>Figure 3</strong>). This means building out a <a class="btn-link" href="img/UAC_EDM_Base.html" target="_blank" title="Mobile responsive template">branded email template</a> for all sorts of applications. By going with a set template, you appear more consistent.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="figure-name">
+                                            <div class="figure-name-inner"><i class="fas fa-chart-bar" aria-hidden="true"></i> Figure 1</div>
+                                        </div>
+                                        <img src="img/Portfolio2018_DefibPromo.jpg" class="img-fluid" alt="Responsive image">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="figure-name">
+                                            <div class="figure-name-inner"><i class="fas fa-chart-bar" aria-hidden="true"></i> Figure 2</div>
+                                        </div>
+                                        <img src="img/UTS-EDM.jpg" class="img-fluid" alt="Responsive image">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="figure-name">
+                                            <div class="figure-name-inner"><i class="fas fa-chart-bar" aria-hidden="true"></i> Figure 3</div>
+                                        </div>
+                                        <img src="img/UAC-EDM.jpg" class="img-fluid" alt="Responsive image">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section class="wave-bottom-container">
+        <svg class="wave-top" width="100" viewBox="0 0 1200 250" preserveAspectRatio="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.578 500 264.749 600 246.698C700 228.647 800 132.374 900 108.306C1000 84.2382 1100 132.374 1150 156.442L1200 180.51V-8.5451e-06H1150C1100 -8.5451e-06 1000 -8.5451e-06 900 -8.5451e-06C800 -8.5451e-06 700 -8.5451e-06 600 -8.5451e-06C500 -8.5451e-06 400 -8.5451e-06 300 -8.5451e-06C200 -8.5451e-06 100 -8.5451e-06 50 -8.5451e-06H0V108.306Z" fill="#333" />
+        </svg>
+    </section>
+    <section id="hire">
+        <div class=" container">
+            <div class="col-md-12">
+                <h3><strong>Interested?</strong></h3>
+                <p>So that we don't end up wasting each other's time, I've built a neat little single page app to measure how likely we are to 'vibe' (as all the young people say). Think of this as a pre-interview measure to see whether my ideals as an employee fit with your organisation's work culture.</p>
+                <div id="app">
+                    <div class="progress-container"><progress :max="quiz.questions.length" :value="questionIndex"></progress></div>
+
+                    <div v-for="(question, index) in quiz.questions">
+                        <div v-show="index === questionIndex">
+
+                            <p class="question-heading"><span class="question-number">{{index + 1}}</span> {{ question.text }}</p>
+                            <div class="answer-container row">
+                                <div v-for="answer in question.answers" class="answer-box col-md-4">
+                                    <button class="answer-button" :name="index" v-model="responses[index]" @click="next2(answer.value)"><span>{{answer.text}}</span></button>
+                                </div>
+                            </div>
+                            <div class="previous-button-container">
+                                <button class="previous-button" v-if="questionIndex > 0" @click="prev">
+                                    Previous
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div v-show="questionIndex === quiz.questions.length">
+                        <div v-show="score() < 0">
+                            <p class="mt-5">Thanks for taking the time to answer my quiz. Based off of the answers that you provided, I'm probably not the best candidate for your needs. Feel free to redo the quiz if you'd like to adjust your answers.</p>
+                            <button class="redo-button" @click="playAgain">
+                                Redo
+                            </button>
+                        </div>
+                        <div v-show="score() >= 0 && score() < 50">
+                            <p class="mt-5">Thanks for taking the time to answer my quiz. Based on your answers, I think it'd be a swell idea to schedule a chat! Feel free to get in touch via any of the methods below.</p>
+                            <div class="contact-button-container">
+                                <a class="contact-button call" href="tel:+61411833090">
+                                    <i class="fas fa-phone-alt" aria-hidden="true"></i><span>Call me</span>
+                                </a>
+                                <a class="contact-button email" href="mailto:johnnytran17@hotmail.com?subject=Job%20enquiry">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i><span>Email me</span>
+                                </a>
+                                <a class="contact-button linkedin" href="https://www.linkedin.com/in/johnny-tran-designer?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B9CUYVua7TdOriFrVSmsKrA%3D%3D" target="_blank">
+                                    <i class="fab fa-linkedin-in" aria-hidden="true"></i><span>LinkedIn</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div v-show="score() >= 50">
+                            <h5 class="mt-3">Woohoo!</h5>
+                            <p> There's a pretty high chance we'll get along based on your answers. Please don't hesitate to get in touch via any of the methods below. I'll be eagerly awaiting your response.</p>
+                            <div class="contact-button-container">
+                                <a class="contact-button call" href="tel:+61411833090">
+                                    <i class="fas fa-phone-alt" aria-hidden="true"></i><span>Call me</span>
+                                </a>
+                                <a class="contact-button email" href="mailto:johnnytran17@hotmail.com?subject=Job%20enquiry">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i><span>Email me</span>
+                                </a>
+                                <a class="contact-button linkedin" href="https://www.linkedin.com/in/johnny-tran-designer?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B9CUYVua7TdOriFrVSmsKrA%3D%3D" target="_blank">
+                                    <i class="fab fa-linkedin-in" aria-hidden="true"></i><span>LinkedIn</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <p>
+                        You are: {{ score() }}
+                    </p>
+-->
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>&copy; Johnny Tran <span id="copyrightYear"></span></footer>
+
+    <script src="js/anime-master/lib/anime.min.js"></script>
+
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <script type="text/javascript" src="js/logo.json"></script>
+
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-26485555-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+
+</html>
