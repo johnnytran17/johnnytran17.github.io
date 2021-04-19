@@ -7,9 +7,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <meta name="author" content="Johnny Tran">
-
+    <script type="text/javascript" src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -18,17 +17,49 @@
     <link href="css/CustomSyle.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
-    <script type="text/javascript" src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="css/animate.min.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script type="text/javascript" rel="preload" src="https://kit.fontawesome.com/64b04b02aa.js" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VTZQEWVRDW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VTZQEWVRDW');
+
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WKL65MC');
+
+    </script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
-
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKL65MC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#start"> <img src="img/JTLogoColour.svg" width="30" height="30" alt="Johnny Tran Logo"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,7 +103,7 @@
         <!-- Do a swipe version for mobile -->
 
         <div id="scroll-prompt-1" class="animate__animated animate__fadeInUp animate__delay-3s">
-            <img id="animate-jump" class="scroll-mouse" src="img/icons/computer-mouse.svg" width="60" height="60" alt="Johnny Tran Meme">
+            <img id="animate-jump" class="scroll-mouse" src="img/icons/computer-mouse.svg" width="60" height="60" alt="Scroller">
             <h6 class="mt-2 text-center">Scroll</h6>
         </div>
         <svg class="wave-top" width="100" viewBox="0 0 1200 250" preserveAspectRatio="none">
@@ -180,20 +211,8 @@
                 </div>
             </div>
         </div>
-
         <!--        Animated Divider START -->
-        <div class="ticker-wrap">
-            <div class="ticker">
-                <div class="ticker__item">
                     <div class='dotted-gradient'></div>
-                </div>
-            </div>
-            <div class="ticker2">
-                <div class="ticker__item">
-                    <div class='dotted-gradient'></div>
-                </div>
-            </div>
-        </div>
         <!--        Animated Divider END -->
 
         <div class="container">
@@ -201,7 +220,7 @@
 
                 <div class="col-md-6">
 
-                    <div class="mt-5">
+                    <div class="mt-2">
                         <span class="badge-fixed">Emails</span>
                         <span class="badge-fixed">Branding</span>
                         <span class="badge-fixed">HTML</span>
@@ -221,23 +240,12 @@
             </div>
         </div>
         <!--        Animated Divider START -->
-        <div class="ticker-wrap">
-            <div class="ticker">
-                <div class="ticker__item">
-                    <div class='dotted-gradient'></div>
-                </div>
-            </div>
-            <div class="ticker2">
-                <div class="ticker__item">
-                    <div class='dotted-gradient'></div>
-                </div>
-            </div>
-        </div>
+        <div class='dotted-gradient'></div>
         <!--        Animated Divider END -->
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="mt-5">
+                    <div class="mt-2">
                         <span class="badge-fixed">Visual Design (UI)</span>
                         <span class="badge-fixed">HTML</span>
                         <span class="badge-fixed">CSS/SCSS</span>
@@ -273,6 +281,9 @@
                                     </tr>
                                     <tr>
                                         <td>Inability to click on course campus location</td>
+                                    </tr>
+                                    <tr>
+                                        <td>No way to get from undergraduate to international or postgraduate course searches</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -326,34 +337,38 @@
                     </div>
                 </div>
                 <div class="col-md-12 course-search-comparison d-none d-lg-block">
-<div class="row mt-3">
-    <div class="col-md-3"><div class="info-compare text-light">
-                        <h6 class="text-light"><i class="fas fa-adjust" aria-hidden="true"></i> <strong>Compare the two</strong></h6>
-                        Click and drag the slider to see the difference between the old and new course search.
-                    </div></div>
-    <div class="col-md-9"><div class=" wrapper-compare">
-                        <div class="before-compare">
-
-                            <img class="content-image" src="img/courseSearchBefore.jpg" draggable="false" /></div>
-                        <div class="after-compare">
-
-                            <img class="content-image" src="img/courseSearchAfter.jpg" draggable="false" />
+                    <div class="row mt-3">
+                        <div class="col-md-3">
+                            <div class="info-compare text-light">
+                                <h6 class="text-light"><i class="fas fa-adjust" aria-hidden="true"></i> <strong>Compare the two</strong></h6>
+                                Click and drag the slider to see the difference between the old and new course search.
+                            </div>
                         </div>
-                        <div class="scroller-compare">
-                            <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-                                <polygon points="0 50 37 68 37 32 0 50" style="fill:#fff" />
-                                <polygon points="100 50 64 32 64 68 100 50" style="fill:#fff" /></svg>
-                            <span class="comparison-label new-label float-left">New</span>
-                            <span class="comparison-label old-label float-right">Old</span>
+                        <div class="col-md-9">
+                            <div class=" wrapper-compare">
+                                <div class="before-compare">
+
+                                    <img class="content-image" src="img/courseSearchBefore.jpg" draggable="false" /></div>
+                                <div class="after-compare">
+
+                                    <img class="content-image" src="img/courseSearchAfter.jpg" draggable="false" />
+                                </div>
+                                <div class="scroller-compare">
+                                    <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                                        <polygon points="0 50 37 68 37 32 0 50" style="fill:#fff" />
+                                        <polygon points="100 50 64 32 64 68 100 50" style="fill:#fff" /></svg>
+                                    <span class="comparison-label new-label float-left">New</span>
+                                    <span class="comparison-label old-label float-right">Old</span>
+                                </div>
+                            </div>
                         </div>
-                    </div></div>
-                    
-                    
-</div>
+
+
+                    </div>
                 </div>
             </div>
         </div>
-<!--
+        <!--
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
@@ -367,22 +382,17 @@
         </div>
 -->
         <!--        Animated Divider START -->
-        <div class="ticker-wrap">
-            <div class="ticker">
-                <div class="ticker__item">
-                    <div class='dotted-gradient'></div>
-                </div>
-            </div>
-            <div class="ticker2">
-                <div class="ticker__item">
-                    <div class='dotted-gradient'></div>
-                </div>
-            </div>
-        </div>
+        <div class='dotted-gradient'></div>
         <!--        Animated Divider END -->
         <div class="container">
             <div class="row mt-4">
                 <div class="col-md-5">
+                    <div class="mt-2">
+                        <span class="badge-fixed">Emails</span>
+                        <span class="badge-fixed">Visual Design (UI)</span>
+                        <span class="badge-fixed">HTML</span>
+                        <span class="badge-fixed">CSS/SCSS</span>
+                    </div>
                     <h4 class="dark">Managing EDMs and their effectiveness</h4>
                     <p class="text-light">Good email design will only help to improve your click rates; not your open rates. If your open rates are already suffering, good email design won't save you.</p>
                     <p class="text-light">The most critical part of your email campaign is your recipient list. If you have a group of people who aren't really interested, it won't matter how stunning your email looks. Your campaign is going to be a dud.</p>
@@ -596,7 +606,7 @@
 
         </div>
     </section>
-    <footer>&copy; Johnny Tran <span id="copyrightYear"></span></footer>
+    <footer><i class="far fa-copyright" aria-hidden="true"></i> Johnny Tran <span id="copyrightYear"></span></footer>
 
     <script src="js/anime-master/lib/anime.min.js"></script>
 
