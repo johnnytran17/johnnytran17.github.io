@@ -13,6 +13,13 @@ body {
     letter-spacing: -0.1px;
 }
 
+footer {
+    background-color: #ebebeb;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
 b,
 strong {
     font-weight: 600;
@@ -26,9 +33,7 @@ section .container {
     padding: 0 40px;
 }
 
-/*# sourceMappingURL=../css/CustomSyle.map */
-
-html::-webkit-scrollbar {
+# sourceMappingURL=../css/CustomSyle.map html::-webkit-scrollbar {
     /*
     width: 7px;
     height: 30px;
@@ -139,40 +144,41 @@ hr {
     margin: 80px 0;
 }
 
+@-webkit-keyframes animated-line {
+    0% {
+        background-image: linear-gradient(to right, #4f4f4f 0%, rgba(255, 255, 255, 0) 0%);
+    }
+
+    100% {
+        background-image: linear-gradient(to right, #4f4f4f 100%, rgba(255, 255, 255, 0) 100%);
+    }
+}
+
+@keyframes animated-line {
+    0% {
+        background-image: linear-gradient(to right, #333 50%, #4f4f4f 50%);
+    }
+
+    100% {
+        background-image: linear-gradient(to right, #4f4f4f 50%, #333 50%);
+    }
+}
+
 .dotted-gradient {
-    background-image: linear-gradient(to right, #4f4f4f 40%, rgba(255, 255, 255, 0) 40%);
     background-position: top;
     background-size: 20px 3px;
     background-repeat: repeat-x;
     height: 3px;
     z-index: 100;
     margin: 80px 0;
-}
-
-@-webkit-keyframes ticker {
-    0% {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-        visibility: visible;
-    }
-
-    100% {
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
-    }
-}
-
-@keyframes ticker {
-    0% {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-        visibility: visible;
-    }
-
-    100% {
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
-    }
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: animated-line;
+    animation-name: animated-line;
+    -webkit-animation-duration: 0.1s;
+    animation-duration: 0.1s;
 }
 
 @-webkit-keyframes loop-up {
@@ -221,57 +227,8 @@ hr {
     }
 }
 
-.ticker-wrap {
-    width: 100%;
-    overflow: hidden;
-    height: 8rem;
-    padding-left: 100%;
-    box-sizing: content-box;
-}
-
-.ticker-wrap .ticker {
-    width: 100%;
-    position: absolute;
-    padding-right: 100%;
-    box-sizing: content-box;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-name: ticker;
-    animation-name: ticker;
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
-}
-
-.ticker-wrap .ticker__item {
-    width: 100%;
-    padding-right: 5px;
-}
-
-.ticker-wrap .ticker2 {
-    width: 100%;
-    position: absolute;
-    padding-right: 100%;
-    box-sizing: content-box;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-name: ticker;
-    animation-name: ticker;
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
-    -webkit-animation-delay: 1.5s;
-    animation-delay: 1.5s;
-}
-
-.ticker-wrap .ticker2__item {
-    width: 100%;
-    padding-right: 5px;
-}
-
-.loop-up, .loop-down {
+.loop-up,
+.loop-down {
     position: relative;
     box-sizing: content-box;
     -webkit-animation-iteration-count: infinite;
