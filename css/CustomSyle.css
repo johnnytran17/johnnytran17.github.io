@@ -33,7 +33,8 @@ section .container {
     padding: 0 40px;
 }
 
-# sourceMappingURL=../css/CustomSyle.map html::-webkit-scrollbar {
+
+html::-webkit-scrollbar {
     /*
     width: 7px;
     height: 30px;
