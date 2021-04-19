@@ -25,10 +25,44 @@
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script type="text/javascript" rel="preload" src="https://kit.fontawesome.com/64b04b02aa.js" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VTZQEWVRDW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VTZQEWVRDW');
+
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WKL65MC');
+
+    </script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
-
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKL65MC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#start"> <img src="img/JTLogoColour.svg" width="30" height="30" alt="Johnny Tran Logo"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -329,34 +363,38 @@
                     </div>
                 </div>
                 <div class="col-md-12 course-search-comparison d-none d-lg-block">
-<div class="row mt-3">
-    <div class="col-md-3"><div class="info-compare text-light">
-                        <h6 class="text-light"><i class="fas fa-adjust" aria-hidden="true"></i> <strong>Compare the two</strong></h6>
-                        Click and drag the slider to see the difference between the old and new course search.
-                    </div></div>
-    <div class="col-md-9"><div class=" wrapper-compare">
-                        <div class="before-compare">
-
-                            <img class="content-image" src="img/courseSearchBefore.jpg" draggable="false" /></div>
-                        <div class="after-compare">
-
-                            <img class="content-image" src="img/courseSearchAfter.jpg" draggable="false" />
+                    <div class="row mt-3">
+                        <div class="col-md-3">
+                            <div class="info-compare text-light">
+                                <h6 class="text-light"><i class="fas fa-adjust" aria-hidden="true"></i> <strong>Compare the two</strong></h6>
+                                Click and drag the slider to see the difference between the old and new course search.
+                            </div>
                         </div>
-                        <div class="scroller-compare">
-                            <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-                                <polygon points="0 50 37 68 37 32 0 50" style="fill:#fff" />
-                                <polygon points="100 50 64 32 64 68 100 50" style="fill:#fff" /></svg>
-                            <span class="comparison-label new-label float-left">New</span>
-                            <span class="comparison-label old-label float-right">Old</span>
+                        <div class="col-md-9">
+                            <div class=" wrapper-compare">
+                                <div class="before-compare">
+
+                                    <img class="content-image" src="img/courseSearchBefore.jpg" draggable="false" /></div>
+                                <div class="after-compare">
+
+                                    <img class="content-image" src="img/courseSearchAfter.jpg" draggable="false" />
+                                </div>
+                                <div class="scroller-compare">
+                                    <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                                        <polygon points="0 50 37 68 37 32 0 50" style="fill:#fff" />
+                                        <polygon points="100 50 64 32 64 68 100 50" style="fill:#fff" /></svg>
+                                    <span class="comparison-label new-label float-left">New</span>
+                                    <span class="comparison-label old-label float-right">Old</span>
+                                </div>
+                            </div>
                         </div>
-                    </div></div>
-                    
-                    
-</div>
+
+
+                    </div>
                 </div>
             </div>
         </div>
-<!--
+        <!--
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
