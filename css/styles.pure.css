@@ -1223,6 +1223,7 @@ pre code {
     font-weight: 400;
     color: #007bff;
     text-decoration: none;
+    background-color: transparent;
 }
 
 .btn-link:hover {
@@ -5396,7 +5397,10 @@ video {
 
 /* Mobile styles */
 @media (max-width: 767.98px) {
-
+    section .container {
+    padding: 0 25px;
+    }
+    
     #start,
     #intro-heading {
         height: auto;
@@ -5406,6 +5410,43 @@ video {
         font-size: 75px;
         line-height: 1;
         letter-spacing: -2.5px;
+    }
+    
+    h3 {
+        font-size: 30px;
+        padding: 0;
+    }
+    
+    h3:before {
+    display: none;
+    }
+    
+    h4 {
+        margin-left: 0;
+        font-size: 18px;
+        font-weight: 800;
+    }
+    
+    h4:before {
+        display: none;
+    }
+    
+    #work {
+            padding-bottom: 50px;
+    }
+    
+    #work h5, #work p, #work ul,#improvements-accordion, #issues-accordion {
+    margin-left: 0;
+    }
+    
+    #work .table-dark {
+        margin-left: 0;
+        width: auto;
+    }
+    
+    .badge-fixed {
+    padding: 0.3em 0.5em;
+    font-size: 11px;
     }
 
     .staggered-intro {
@@ -5443,4 +5484,26 @@ video {
     .wave-bottom {
         height: 35px;
     }
+    
+    .timeline-container {
+        margin-left: 25px;
+    }
+    
+    .timeline {
+    padding: 20px 0 20px 20px;
+    }
+    
+    .timeline h6:before {
+    top: 26px;
+    width: 20px;
+    }
+    
+    .timeline.after:last-of-type:before {
+    top: 20px;
+    }
+    
+    #hire {
+        height: auto;
+    }
+    
 }
