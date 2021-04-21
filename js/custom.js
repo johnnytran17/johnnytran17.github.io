@@ -102,100 +102,107 @@ const wave1 = "M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.
 
 if ($(window).width() > 960) {
 
-var badgeDesign = anime({
-    targets: '.badge',
-    translateY: 40,
-    opacity: 1,
-    duration: 300,
-    loop: false,
-    direction: 'alternate',
-    delay: anime.stagger(30),
-    autoplay: false
-});
-anime({
-    targets: '#lottieLogo',
-    translateY: -200,
-    scale: 0.5,
-    duration: 2000,
-    delay: 2000,
-    easing: 'easeInOutExpo'
-});
-anime({
-    targets: '.staggered-intro',
-    translateY: [-20, 0],
-    opacity: [0, 1],
-    duration: 800,
-    delay: anime.stagger(300, {
-        start: 2800
-    }) // increase delay by 100ms for each elements.
-});
-anime({
-    targets: '#animate-jump',
-    translateY: [0, -30],
-    duration: 500,
-    autoplay: true,
-    loop: true,
-    direction: 'alternate',
-    easing: 'easeInOutSine'
-});
+    var badgeDesign = anime({
+        targets: '.badge',
+        translateY: 40,
+        opacity: 1,
+        duration: 300,
+        loop: false,
+        direction: 'alternate',
+        delay: anime.stagger(30),
+        autoplay: false
+    });
+    anime({
+        targets: '#lottieLogo',
+        translateY: -200,
+        scale: 0.5,
+        duration: 2000,
+        delay: 2000,
+        easing: 'easeInOutExpo'
+    });
+    anime({
+        targets: '.staggered-intro',
+        translateY: [-20, 0],
+        opacity: [0, 1],
+        duration: 800,
+        delay: anime.stagger(300, {
+            start: 2800
+        }) // increase delay by 100ms for each elements.
+    });
+    anime({
+        targets: '#animate-jump',
+        translateY: [0, -30],
+        duration: 500,
+        autoplay: true,
+        loop: true,
+        direction: 'alternate',
+        easing: 'easeInOutSine'
+    });
 
     var fired = false;
-//Change class based on scroll
-$(function () {
-    //caches a jQuery object containing the header element
-    var heading = $("#intro-heading h1");
-    var heading2 = $("#intro-heading h2");
-    var scrollPrompt = $("#scroll-prompt-1");
+    //Change class based on scroll
+    $(function () {
+        //caches a jQuery object containing the header element
+        var heading = $("#intro-heading h1");
+        var heading2 = $("#intro-heading h2");
+        var scrollPrompt = $("#scroll-prompt-1");
 
-    $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
-        if (scroll == 0) {
-            scrollPrompt.removeClass('animate__fadeOutDown');
-            scrollPrompt.addClass('animate__fadeInUp');
-            $("#intro-heading h2.doStuff").removeClass('re-define').html("<span style='color: #FF5252'>Designer.</span><span style='color: rgb(4, 105, 192)'>&nbsp;Coder.</span><span style='color: rgb(70, 149, 234)'>&nbsp;Motion Artist.</span>");
-            $("#to-top").css("right", "-60px");
-            if (fired === true) {
-                badgeDesign.reverse();
-                badgeDesign.play();
-                fired = false;
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll == 0) {
+                scrollPrompt.removeClass('animate__fadeOutDown');
+                scrollPrompt.addClass('animate__fadeInUp');
+                $("#intro-heading h2.doStuff").removeClass('re-define').html("<span style='color: #FF5252'>Designer.</span><span style='color: rgb(4, 105, 192)'>&nbsp;Coder.</span><span style='color: rgb(70, 149, 234)'>&nbsp;Motion Artist.</span>");
+                $("#to-top").css("right", "-60px");
+                if (fired === true) {
+                    badgeDesign.reverse();
+                    badgeDesign.play();
+                    fired = false;
+                }
+
+            } else if (scroll > 0 && scroll <= 400) {
+                scrollPrompt.addClass('animate__fadeOutDown').removeClass('animate__delay-3s animate__fadeInUp');
+                $("#intro-heading h2.doStuff").removeClass('re-define').html("<span style='color: #FF5252'>Designer.</span><span style='color: rgb(4, 105, 192)'>&nbsp;Coder.</span><span style='color: rgb(70, 149, 234)'>&nbsp;Motion Artist.</span>");
+                $("#to-top").css("right", "-60px");
+                $("nav.navbar").css({
+                    "box-shadow": "none",
+                    "-webkit-box-shadow": "none"
+                });
+                if (fired === false) {
+                    badgeDesign.play();
+                    fired = true;
+                }
+
+            } else if (scroll > 400) {
+                $("#intro-heading h2.doStuff").html("Re-defining your digital brand").css({
+                    'color': '#FF5252',
+                    'background-color': 'transparent '
+                }).addClass('re-define');
+                $("#to-top").css("right", "0");
+                $("nav.navbar").css({
+                    "box-shadow": "0px 2px 3px 1px rgba(0,0,0,0.1)",
+                    "-webkit-box-shadow": "0px 2px 3px 1px rgba(0,0,0,0.1)"
+                });
             }
 
-        } else if (scroll > 0 && scroll <= 400) {
-            scrollPrompt.addClass('animate__fadeOutDown').removeClass('animate__delay-3s animate__fadeInUp');
-            $("#intro-heading h2.doStuff").removeClass('re-define').html("<span style='color: #FF5252'>Designer.</span><span style='color: rgb(4, 105, 192)'>&nbsp;Coder.</span><span style='color: rgb(70, 149, 234)'>&nbsp;Motion Artist.</span>");
-            $("#to-top").css("right", "-60px");
-            $("nav.navbar").css({
-                "box-shadow": "none",
-                "-webkit-box-shadow": "none"
-            });
-            if (fired === false) {
-                badgeDesign.play();
-                fired = true;
+            function valBetween(v, min, max) {
+                return (Math.min(max, Math.max(min, v)));
             }
-
-        } else if (scroll > 400) {
-            $("#intro-heading h2.doStuff").html("Re-defining your digital brand").css({
-                'color': '#FF5252',
-                'background-color': 'transparent '
-            }).addClass('re-define');
-            $("#to-top").css("right", "0");
-            $("nav.navbar").css({
-                "box-shadow": "0px 2px 3px 1px rgba(0,0,0,0.1)",
-                "-webkit-box-shadow": "0px 2px 3px 1px rgba(0,0,0,0.1)"
-            });
-        }
-
-        function valBetween(v, min, max) {
-            return (Math.min(max, Math.max(min, v)));
-        }
-        $(window).scroll(function (e) {
-            var distanceScrolled = valBetween($(this).scrollTop(), 700, 1100);
-            $('#lottieLogo').css({
-                'top': '' + 50 - (distanceScrolled - 700) + 'px'
+            $(window).scroll(function (e) {
+                var distanceScrolled = valBetween($(this).scrollTop(), 700, 1100);
+                $('#lottieLogo').css({
+                    'top': '' + 50 - (distanceScrolled - 700) + 'px'
+                });
             });
         });
     });
-});
+    ////disable scrolling for 3 seconds
+    if ($(window).scrollTop() == 0) {
+        document.body.style.overflow = 'hidden';
+        setTimeout(function () {
+            document.body.style.overflow = 'auto';
+        }, 3000);
+    }
 }
 
 anime({
@@ -219,13 +226,7 @@ anime({
   ],
 });
 
-////disable scrolling for 3 seconds
-if ($(window).scrollTop() == 0) {
-    document.body.style.overflow = 'hidden';
-    setTimeout(function () {
-        document.body.style.overflow = 'auto';
-    }, 3000);
-}
+
 
 
 
