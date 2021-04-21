@@ -12,8 +12,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="css/styles.pure.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VTZQEWVRDW"></script>
     <script>
@@ -75,7 +75,7 @@
     <section id="start" class="intro-section">
         <div class="ball"></div>
         <div id="logo-container">
-            <lottie-player id="lottieLogo" src="js/logo.json" background="transparent" speed="1" autoplay></lottie-player>
+            <lottie-player id="lottieLogo" class="d-none d-lg-block" src="js/logo.json" background="transparent" speed="1" autoplay></lottie-player>
         </div>
         <div id="intro-heading">
             <h1><span class="staggered-intro here">Johnny</span> <span class="staggered-intro johnny">Tran</span></h1>
@@ -92,13 +92,12 @@
                 <span class="badge badge-motion">Animated Logos</span>
             </div>
         </div>
-            <link href="css/styles.pure.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script type="text/javascript" rel="preload" src="https://kit.fontawesome.com/64b04b02aa.js" crossorigin="anonymous"></script>
 
-        <div id="scroll-prompt-1" class="animate__animated animate__fadeInUp animate__delay-3s">
+        <div id="scroll-prompt-1" class="animate__animated animate__fadeInUp animate__delay-3s d-none d-lg-block">
             <img id="animate-jump" class="scroll-mouse" src="img/icons/computer-mouse.svg" width="60" height="60" alt="Scroller">
             <h6 class="mt-2 text-center">Scroll</h6>
         </div>
@@ -123,16 +122,16 @@
                 <div class="col-md-6">
                     <h5 class="mb-3 text-muted"><i class="far fa-check-circle" aria-hidden="true"></i> <span>Likes</span></h5>
                     <div class="row">
-                        <div class="col-3 p-0"><img class="likesDislikesImg" src="img/icons/memes.svg" width="60" height="60" alt="Johnny Tran Meme">
+                        <div class="col-6 col-md-3 p-0"><img class="likesDislikesImg" src="img/icons/memes.svg" width="60" height="60" alt="Johnny Tran Meme">
                             <p class="likesDislikes"><button id="tooltipshow" class="btn-link" data-toggle="tooltip" data-html="true" data-placement="top" title="I like to start my day off with a meme or two... or ten.">Memes</button></p>
                         </div>
-                        <div class="col-3 p-0"><img class="likesDislikesImg" src="img/icons/animals.svg" width="60" height="60" alt="johnny tran dog">
+                        <div class="col-6 col-md-3 p-0"><img class="likesDislikesImg" src="img/icons/animals.svg" width="60" height="60" alt="johnny tran dog">
                             <p class="likesDislikes"><button id="tooltipshow" class="btn-link" data-toggle="tooltip" data-html="true" data-placement="top" title="Cats, dogs, birds, goats 	&#8212; I love `em all. I currently have a Greyhound named Greymond, and he's the absolute best*.<br/><br/>*The absolute best at doing nothing.">Animals</button></p>
                         </div>
-                        <div class="col-3 p-0"><img class="likesDislikesImg" src="img/icons/horrors.svg" width="60" height="60" alt="horror movies johnny tran">
+                        <div class="col-6 col-md-3 p-0"><img class="likesDislikesImg" src="img/icons/horrors.svg" width="60" height="60" alt="horror movies johnny tran">
                             <p class="likesDislikes" style=""><button id="tooltipshow" class="btn-link" data-toggle="tooltip" data-html="true" data-placement="top" title="My personal faves:<ul><li>The Conjuring</li><li>Marianne</li><li>IT: Chapter One</li><li>The Haunting of Hill House</li><li>Annabelle: Creation</li></ul>">Horrors</button></p>
                         </div>
-                        <div class="col-3 p-0"><img class="likesDislikesImg" src="img/icons/fruits.svg" width="60" height="60" alt="johnny tran sauce icon">
+                        <div class="col-6 col-md-3 p-0"><img class="likesDislikesImg" src="img/icons/fruits.svg" width="60" height="60" alt="johnny tran sauce icon">
                             <p class="likesDislikes"><button id="tooltipshow" class="btn-link" data-toggle="tooltip" data-html="true" data-placement="top" title="I'm a fruit feind. If I go to a buffet, it's straight to the fruit section, followed by entrees, then mains, and then back to the fruit section for dessert.">Fruit</button></p>
                         </div>
                     </div>
@@ -140,16 +139,16 @@
                 <div class="col-md-6">
                     <h5 class="mb-3 text-muted"><i class="far fa-times-circle" aria-hidden="true"></i> <span>Dislikes</span></h5>
                     <div class="row">
-                        <div class="col-3 p-0"><img class="likesDislikesImg" src="img/icons/swords.svg" width="60" height="60" alt="Office Politics icon">
+                        <div class="col-6 col-md-3 p-0"><img class="likesDislikesImg" src="img/icons/swords.svg" width="60" height="60" alt="Office Politics icon">
                             <p class="likesDislikes"><button id="tooltipshow" class="btn-link dislike" data-toggle="tooltip" data-html="true" data-placement="top" title="Drama and scheming is best reserved for poorly-scripted daytime television; not the workplace.">Politics</button></p>
                         </div>
-                        <div class="col-3 p-0"><img class="likesDislikesImg" src="img/icons/hat.svg" width="60" height="60" alt="Fedora hat icon">
+                        <div class="col-6 col-md-3 p-0"><img class="likesDislikesImg" src="img/icons/hat.svg" width="60" height="60" alt="Fedora hat icon">
                             <p class="likesDislikes"><button id="tooltipshow" class="btn-link dislike" data-toggle="tooltip" data-html="true" data-placement="top" title="It's the 21st century. There's no need to look like a mobster from the 1950s.">Fedoras</button></p>
                         </div>
-                        <div class="col-3 p-0"><img class="likesDislikesImg" src="img/icons/olives.svg" width="60" height="60" alt="olives icon Johnny">
+                        <div class="col-6 col-md-3 p-0"><img class="likesDislikesImg" src="img/icons/olives.svg" width="60" height="60" alt="olives icon Johnny">
                             <p class="likesDislikes"><button id="tooltipshow" class="btn-link dislike" data-toggle="tooltip" data-html="true" data-placement="top" title="I like fruit, but olives can burn in hell.">Olives</button></p>
                         </div>
-                        <div class="col-3 p-0"><img class="likesDislikesImg" src="img/icons/train.svg" width="60" height="60" alt="Johnny Tran train icon">
+                        <div class="col-6 col-md-3 p-0"><img class="likesDislikesImg" src="img/icons/train.svg" width="60" height="60" alt="Johnny Tran train icon">
                             <p class="likesDislikes"><button id="tooltipshow" class="btn-link dislike" data-toggle="tooltip" data-html="true" data-placement="top" title="Especially when it's raining and somebody in your carriage smells like a used gym towel.">Trains</button></p>
                         </div>
                     </div>
