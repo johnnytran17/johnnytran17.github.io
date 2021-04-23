@@ -4490,6 +4490,11 @@ p {
     }
 }
 
+.animate__fadeOutDown {
+    -webkit-animation-name: fadeOutDown;
+    animation-name: fadeOutDown;
+}
+
 .animate__animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -5303,12 +5308,13 @@ video {
     border: 1px solid #000;
 }
 
-.after-compare,
-.before-compare {
+/* Our image information */
+.before-compare,
+.after-compare {
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-    background-color: #fff;
+    background-color: white;
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -5343,8 +5349,24 @@ video {
     opacity: 1;
 }
 
-.scroller-compare:after,
-.scroller-compare:before {
+.scrolling-compare {
+    pointer-events: none;
+    opacity: 1;
+    // z-index: 1;
+}
+
+.scroller__thumb {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #FF5252;
+    border-radius: 40px;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.scroller-compare:before,
+.scroller-compare:after {
     content: " ";
     display: block;
     width: 3px;
@@ -5364,11 +5386,11 @@ video {
     bottom: 101%;
 }
 
-.scroller-compare:after,
-.scroller-compare:before {
+.scroller-compare:before,
+.scroller-compare:after {
     background: #fff;
-    box-shadow: 4px 0 4px 1px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 4px 0 4px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 0px 4px 1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 4px 0px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
 @font-face {
