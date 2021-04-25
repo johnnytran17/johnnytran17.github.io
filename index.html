@@ -544,7 +544,7 @@
                             <p class="question-heading"><span class="question-number">{{index + 1}}</span> {{ question.text }}</p>
                             <div class="answer-container row">
                                 <div v-for="answer in question.answers" class="answer-box col-md-4">
-                                    <button class="answer-button" :name="index" v-model="responses[index]" @click="next2(answer.value)"><span>{{answer.text}}</span></button>
+                                    <button class="answer-button" :name="index" v-model="responses[index]" @click="next2(answer.value)">{{answer.text}}</button>
                                 </div>
                             </div>
                             <div class="previous-button-container">
