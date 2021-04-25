@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="css/styles.pure.css" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VTZQEWVRDW"></script>
     <script>
@@ -92,10 +92,10 @@
                 <span class="badge badge-motion">Animated Logos</span>
             </div>
         </div>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-    <script type="text/javascript" rel="preload" src="https://kit.fontawesome.com/64b04b02aa.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <script type="text/javascript" rel="preload" src="https://kit.fontawesome.com/64b04b02aa.js" crossorigin="anonymous"></script>
 
         <div id="scroll-prompt-1" class="animate__animated animate__fadeInUp animate__delay-3s d-none d-lg-block">
             <img id="animate-jump" class="scroll-mouse" src="img/icons/computer-mouse.svg" width="60" height="60" alt="Scroller">
@@ -207,7 +207,7 @@
             </div>
         </div>
         <!--        Animated Divider START -->
-                    <div class='dotted-gradient'></div>
+        <div class='dotted-gradient'></div>
         <!--        Animated Divider END -->
 
         <div class="container">
@@ -601,7 +601,27 @@
 
         </div>
     </section>
-    <footer><i class="far fa-copyright" aria-hidden="true"></i> Johnny Tran <span id="copyrightYear"></span></footer>
+    <section class="footer-container pt-5 pb-5">
+        <footer class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/JTLogoColour.svg" width="50" height="50" alt="Johnny Tran Logo">
+                    <small class="d-block mt-3 text-muted mb-5"><i class="far fa-copyright" aria-hidden="true"></i> <strong>Johnny Tran <span id="copyrightYear"></span></strong></small>
+                </div>
+                <div class="col-md-6">
+                    <h6>Made with</h6>
+                    <ul class="list-unstyled list-group list-group-flush">
+                        <li class="list-group-item"><a class="text-muted" href="https://getbootstrap.com/"><img class="mr-3" src="img/bootstrap-logo.svg" width="20" height="20" alt="Bootstrap Logo">Bootstrap</a></li>
+                        <li class="list-group-item"><a class="text-muted" href="https://animejs.com/"><img class="mr-3" src="img/anime-mini-logo.svg" width="50" height="20" alt="Anime JS Logo">Anime.js</a></li>
+                        <li class="list-group-item"><a class="text-muted" href="https://lottiefiles.com/"><img class="mr-3" src="img/lottie-logo.svg" width="20" height="20" alt="LottieFiles Logo">LottieFiles</a></li>
+                        <li class="list-group-item"><a class="text-muted" href="https://vuejs.org/"><img class="mr-3" src="img/vue-logo.png" width="20" height="20" alt="Vue Logo"> Vue.js</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </footer>
+    </section>
+
 
     <script src="js/anime-master/lib/anime.min.js"></script>
 
