@@ -555,13 +555,13 @@
                         </div>
                     </div>
                     <div v-show="questionIndex === quiz.questions.length">
-                        <div v-show="score() < 0">
+                        <div v-show="score() < 0" id="score-under-0">
                             <p class="mt-5">Thanks for taking the time to answer my quiz. Based off of the answers that you provided, I'm probably not the best candidate for your needs. Feel free to redo the quiz if you'd like to adjust your answers.</p>
                             <button class="redo-button" @click="playAgain">
                                 Redo
                             </button>
                         </div>
-                        <div v-show="score() >= 0 && score() < 50">
+                        <div v-show="score() >= 0 && score() < 50" id="score-0-50">
                             <p class="mt-5">Thanks for taking the time to answer my quiz. Based on your answers, I think it'd be a swell idea to schedule a chat! Feel free to get in touch via any of the methods below.</p>
                             <div class="contact-button-container">
                                 <a class="contact-button call" href="tel:+61411833090">
@@ -575,7 +575,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div v-show="score() >= 50">
+                        <div v-show="score() >= 50" id="score-over-50">
                             <h5 class="mt-3">Woohoo!</h5>
                             <p> There's a pretty high chance we'll get along based on your answers. Please don't hesitate to get in touch via any of the methods below. I'll be eagerly awaiting your response.</p>
                             <div class="contact-button-container">
