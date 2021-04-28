@@ -2,7 +2,7 @@
 /*global $, jQuery, alert*/
 
 //back to top on refresh
-(document).ready(function(){
+$(document).ready(function(){
     $(this).scrollTop(0);
 });
 
