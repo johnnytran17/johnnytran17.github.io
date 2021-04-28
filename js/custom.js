@@ -1,11 +1,6 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
 
-//back to top on refresh
-$(document).ready(function(){
-    $(this).scrollTop(0);
-});
-
 // Let's use the 'active' variable to let us know when we're using it
 let active = false;
 
