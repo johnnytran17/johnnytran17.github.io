@@ -1,12 +1,6 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
 
-//go to top of page on refresh
-window.onload = function() {
- setTimeout (function () {
-  scrollTo(0,0);
- }, 100); //100ms for example
-}
 
 // Let's use the 'active' variable to let us know when we're using it
 let active = false;
@@ -180,6 +174,7 @@ if ($(window).width() > 960) {
                 }
 
             } else if (scroll > 400) {
+                scrollPrompt.addClass('animate__fadeOutDown').removeClass('animate__delay-3s animate__fadeInUp');
                 $("#intro-heading h2.doStuff").html("Re-defining your digital brand").css({
                     'color': '#FF5252',
                     'background-color': 'transparent '
@@ -202,8 +197,8 @@ if ($(window).width() > 960) {
             });
         });
     });
-    //disable scrolling for 3 seconds
-        if ($(window).scrollTop() == 0) {
+    ////disable scrolling for 3 seconds
+    if ($(window).scrollTop() == 0) {
         document.body.style.overflow = 'hidden';
         setTimeout(function () {
             document.body.style.overflow = 'auto';
