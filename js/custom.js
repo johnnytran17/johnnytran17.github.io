@@ -1,6 +1,11 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
 
+//go to top of page on refresh
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
 // Let's use the 'active' variable to let us know when we're using it
 let active = false;
 
