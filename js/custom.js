@@ -200,13 +200,8 @@ if ($(window).width() > 960) {
             });
         });
     });
-    ////disable scrolling for 3 seconds
-    if ($(window).scrollTop() == 0) {
-        document.body.style.overflow = 'hidden';
-        setTimeout(function () {
-            document.body.style.overflow = 'auto';
-        }, 3000);
-    }
+    //disable scrolling for 3 seconds
+
 }
 
 anime({
