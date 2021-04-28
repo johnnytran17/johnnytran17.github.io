@@ -3,7 +3,7 @@
 
 //go to top of page on refresh
 window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
+  window.scrollTo(0, 1);
 }
 
 // Let's use the 'active' variable to let us know when we're using it
