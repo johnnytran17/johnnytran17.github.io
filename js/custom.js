@@ -2,8 +2,10 @@
 /*global $, jQuery, alert*/
 
 //go to top of page on refresh
-window.onbeforeunload = function () {
-  window.scrollTo(0, 1);
+window.onload = function() {
+ setTimeout (function () {
+  scrollTo(0,0);
+ }, 100); //100ms for example
 }
 
 // Let's use the 'active' variable to let us know when we're using it
